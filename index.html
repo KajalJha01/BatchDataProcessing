@@ -1,0 +1,21 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+
+<html xmlns:th="https://thymeleaf.org">
+<!--<form action="save" method="post">-->
+<table>
+<h1>WELCOME CONSUMER.!!</h1>
+<tr th:each="failedProduct": "${failedProductList}">
+<td th:text="${failedProduct.upc}" />
+<td th:text="${failedProduct.productDesc}" />
+<td th:text="${failedProduct.artistId}" />
+<td th:text="${failedProduct.orgId" />
+<td th:text="${failedProduct.configId}" />
+<td th:text="${failedProduct.releaseDate" />
+<td th:text="${failedProduct.messageId" />
+<td><input type="submit" value="Modify"></input></td>
+</tr>
+</table>
+<!--</form>-->
+</html>
